@@ -1,0 +1,8 @@
+name = "DAWG"
+uuid = "9584cfe1-f499-4f3d-83bd-bf0a41b6e0fd"
+authors = ["Hotto Link Inc. <rd@hottolink.co.jp>", "JokingHero <kornel.labun@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+LegacyStrings = "1b4a561d-cfcb-5daf-8433-43fcf8b4bea3"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"

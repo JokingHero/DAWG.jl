@@ -1,10 +1,10 @@
 using DAWG
-using Base.Test
+using Test
 
 l = ["aaa","aab","aac","aaaxx","nmj","mit"]
 println("testing Sparse Matrix DAWG...")
 smdawg = makeSparseMatrixDAWG(l)
-olist = DictionaryMatch("aaaaac",smdawg)
+olist = dictionaryMatch("aaaaac",smdawg)
 println(olist)
 @test length(olist) == 2
 @test olist[1][1] == 1
@@ -14,7 +14,7 @@ println(olist)
 
 println("testing Double Array DAWG...")
 dadawg = makeDoubleArrayDAWG(l)
-olist = DictionaryMatch("aaaaac",dadawg)
+olist = dictionaryMatch("aaaaac",dadawg)
 println(olist)
 @test length(olist) == 2
 @test olist[1][1] == 1
